@@ -15,7 +15,7 @@ function App() {
       <Header />
       <div className="h-18 md:h-16" />
       <main className="space-y-5">
-        <Hero name="Constanza" date="01/11/2025" time="22:30" />
+        <Hero name="Constanza" date="01/11/2025" time="21:30" />
 
         <Countdown targetDate="2025-11-01T22:30:00" />
 

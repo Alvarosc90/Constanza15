@@ -13,6 +13,7 @@ function App() {
   return (
     <div>
       <Header />
+      <div className="h-18 md:h-16" />
       <main className="space-y-5">
         <Hero name="Constanza" date="01/11/2025" time="22:30" />
 

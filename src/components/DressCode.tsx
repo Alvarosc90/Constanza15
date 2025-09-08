@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaExclamationTriangle, FaUserTie, FaFemale } from "react-icons/fa";
+import { FaExclamationTriangle } from "react-icons/fa";
 
 interface DressCodeProps {
   code: string;
@@ -39,23 +39,20 @@ const DressCode: React.FC<DressCodeProps> = ({ code, accentHex = "#920112" }) =>
         {code}
       </p>
 
-      {/* Íconos de vestimenta */}
-      <div className="mt-8 flex justify-center gap-10 text-rose-600">
+      {/* Íconos de vestimenta (imagen personalizada) */}
+      <div className="mt-8 flex justify-center gap-10 text-black">
         <motion.div
-          whileHover={{ scale: 1.1, rotate: -5 }}
+          whileHover={{ scale: .9 }}
           className="flex flex-col items-center gap-2"
         >
-          <FaUserTie className="text-5xl" />
-          <span className="text-sm font-medium text-rose-700"></span>
+          <img
+            src="/dress.png"
+            alt="Dress code"
+            className="w-22 h-22 object-contain"
+          />
+          <span className="text-sm font-medium"></span>
         </motion.div>
 
-        <motion.div
-          whileHover={{ scale: 1.1, rotate: 5 }}
-          className="flex flex-col items-center gap-2"
-        >
-          <FaFemale className="text-5xl" />
-          <span className="text-sm font-medium text-rose-700"></span>
-        </motion.div>
       </div>
 
       {/* Estilos tipográficos */}

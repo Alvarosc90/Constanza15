@@ -5,7 +5,7 @@ export default function FinalMessage() {
   return (
     <motion.section
       id="final"
-      className="relative py-20 px-6 text-center bg-white overflow-hidden"
+      className="relative py-10 px-2 text-center bg-white overflow-hidden"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true, amount: 0.3 }}
@@ -25,20 +25,6 @@ export default function FinalMessage() {
           style={{ color: "#920112" }}>
         Constanza
       </h3>
-
-      {/* Decoraciones opcionales */}
-      <img
-        src="/decor-left.png"
-        alt=""
-        aria-hidden
-        className="absolute top-6 left-4 w-32 opacity-80 pointer-events-none"
-      />
-      <img
-        src="/decor-right.png"
-        alt=""
-        aria-hidden
-        className="absolute bottom-6 right-4 w-32 opacity-80 pointer-events-none"
-      />
 
       {/* Estilos tipográficos */}
       <style>{`

@@ -6,7 +6,6 @@ const sections = [
   { id: "countdown", label: "Cuenta regresiva" },
   { id: "location", label: "Ubicación" },
   { id: "dresscode", label: "Código de vestimenta" },
-  { id: "gallery", label: "Galería" },
   { id: "rsvp", label: "Confirmar" },
   { id: "final", label: "Mensaje final" },
 ];

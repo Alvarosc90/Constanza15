@@ -23,7 +23,7 @@ const Hero: React.FC<HeroProps> = ({
   name,
   date,
   time,
-  logoSrc = "/logo.png",
+  logoSrc = "/logo2.png",
   bgPatternSrc = "/fondo.png",
   decoTopSrc = "/flores-top.png",
   decoBottomSrc = "/flores-bottom.png",

@@ -11,30 +11,9 @@ export default function RSVP() {
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.8 }}
     >
-      {/* Decoraciones BLANCAS desde los bordes */}
-      {/* Esquina superior izquierda */}
-      {/* Esquina superior izquierda */}
-      <img
-        src="/bottom-white.png"
-        alt=""
-        aria-hidden
-        className="pointer-events-none select-none absolute top-0 left-0 w-28 md:w-36 lg:w-44 z-10"
-        style={{ transform: "scaleY(-1) translate(-10px, -10px)", transformOrigin: "top left" }}
-      />
-
-      {/* Esquina superior derecha */}
-      <img
-        src="/bottom-white2.png"
-        alt=""
-        aria-hidden
-        className="pointer-events-none select-none absolute top-0 right-0 w-28 md:w-36 lg:w-44 z-10"
-        style={{ transform: "scaleX(-1) scaleY(-1) translate(10px, -10px)", transformOrigin: "top right" }}
-      />
-
-
 
       {/* Icono */}
-      <div className="flex justify-center mb-4">
+      <div className="flex justify-center mb-2">
         <FaCalendarCheck className="text-white text-5xl drop-shadow-sm" />
       </div>
 

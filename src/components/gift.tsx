@@ -20,7 +20,7 @@ const Gift: React.FC<GiftProps> = ({ alias, accentHex = "#920112" }) => {
   return (
     <motion.section
       id="gift"
-      className="relative w-full py-24 px-6 text-center bg-white"
+      className="relative w-full py-12 px-6 text-center bg-white"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}

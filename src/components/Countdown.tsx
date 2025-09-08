@@ -32,14 +32,14 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
   return (
     <section
       id="countdown"
-      className="bg-white py-16 text-center"
+      className="bg-white py-12 text-center"
       aria-label="Cuenta regresiva"
     >
-      <h3 className="text-5xl md:text-6xl font-extrabold text-rose-700 mb-10">
+      <h3 className="text-3xl md:text-6xl font-extrabold text-rose-700 mb-8">
         Faltan
       </h3>
 
-      <div className="flex flex-wrap justify-center gap-6">
+      <div className="flex justify-center gap-2 md:gap-6">
         {[
           { value: pad(timeLeft.days), label: "días" },
           { value: pad(timeLeft.hours), label: "horas" },
@@ -48,12 +48,12 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
         ].map((item) => (
           <div
             key={item.label}
-            className="min-w-[120px] rounded-3xl border border-rose-200 bg-rose-50 px-6 py-6 shadow-md"
+            className="flex-1 max-w-[70px] md:min-w-[120px] rounded-xl md:rounded-3xl border border-rose-200 bg-rose-50 px-2 md:px-6 py-4 md:py-6 shadow-md"
           >
-            <div className="text-5xl md:text-6xl font-extrabold text-rose-700">
+            <div className="text-2xl md:text-6xl font-extrabold text-rose-700">
               {item.value}
             </div>
-            <div className="mt-2 text-sm md:text-base uppercase tracking-widest text-rose-600">
+            <div className="mt-1 text-xs md:text-base uppercase tracking-widest text-rose-600">
               {item.label}
             </div>
           </div>

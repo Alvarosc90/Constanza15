@@ -9,12 +9,19 @@ import FinalMessage from "./components/FinalMessage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
+// 👇 importa el canvas de pétalos
+import RosePetalsCanvas from "./components/RosePetalsCanvas";
+
 function App() {
   return (
-    <div>
+    <div className="relative">
+      {/* Efecto de pétalos de rosa */}
+      <RosePetalsCanvas count={60} countMobile={28} />
+
       <Header />
       <div className="h-18 md:h-16" />
-      <main className="space-y-5">
+
+      <main className="space-y-5 relative z-10">
         <Hero name="Constanza" date="01/11/2025" time="21:30" />
 
         <Countdown targetDate="2025-11-01T22:30:00" />

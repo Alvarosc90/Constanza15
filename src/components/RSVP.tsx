@@ -43,7 +43,7 @@ export default function RSVP() {
         La fiesta no sería lo mismo sin vos.{" "}
         <span className="font-semibold">Confirma tu asistencia</span> y sé parte
         de esta noche única, confirmar hasta el día{" "}
-        <span className="font-semibold">26/09</span>
+        <span className="font-semibold">27/09</span>
       </p>
 
       {/* Botón de confirmación (tipografía de molde: Poppins) */}

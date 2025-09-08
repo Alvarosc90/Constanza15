@@ -8,6 +8,7 @@ import RSVP from "./components/RSVP";
 import FinalMessage from "./components/FinalMessage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import MusicPlayer from "./components/MusicPlayer";
 
 // 👇 importa el canvas de pétalos
 import RosePetalsCanvas from "./components/RosePetalsCanvas";
@@ -39,6 +40,8 @@ function App() {
       </main>
 
       <Footer />
+      <MusicPlayer />
+
     </div>
   );
 }

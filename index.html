@@ -1,12 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mis XV - Constanza</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Mis XV - Constanza</title>
+
+  <!-- SEO básico -->
+  <meta name="description"
+    content="Invitación digital de los 15 de Constanza. Fecha, ubicación, dress code, confirmación y más." />
+  <meta name="theme-color" content="#920112" />
+
+  <!-- Favicon / íconos (opcionales) -->
+  <!-- <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" /> -->
+
+  <!-- Fuentes (elegantes para 15) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Parisienne&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Estilos globales mínimos -->
+  <style>
+    :root {
+      --accent: #920112;
+      /* rojo pasión */
+      --font-heading: "Playfair Display", serif;
+      --font-script: "Parisienne", cursive;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      /* navegación suave entre secciones */
+    }
+
+    body {
+      margin: 0;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: #111827;
+      /* neutral-900 */
+      background-color: #ffffff;
+    }
+
+    /* Clases utilitarias para tipografías elegantes */
+    .font-heading {
+      font-family: var(--font-heading);
+    }
+
+    .font-script {
+      font-family: var(--font-script);
+    }
+
+    /* Asegura que la pantalla inicial ocupe el alto completo correctamente en móviles */
+    #root,
+    body,
+    html {
+      min-height: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
 </html>

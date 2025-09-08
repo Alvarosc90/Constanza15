@@ -1,33 +1,68 @@
 import { motion } from "framer-motion";
-import { FaExclamationTriangle } from "react-icons/fa";
+import { FaExclamationTriangle, FaUserTie, FaFemale } from "react-icons/fa";
 
 interface DressCodeProps {
   code: string;
+  accentHex?: string; // color principal (por defecto rojo pasión)
 }
 
-const DressCode: React.FC<DressCodeProps> = ({ code }) => {
+const DressCode: React.FC<DressCodeProps> = ({ code, accentHex = "#920112" }) => {
   return (
     <motion.section
-      className="py-12 px-4 text-center bg-gradient-to-br from-rose-50 via-white to-rose-100 rounded-3xl shadow-lg max-w-3xl mx-auto border-2 border-rose-300 relative overflow-hidden"
+      id="dresscode"
+      className="relative py-14 px-6 text-center max-w-3xl mx-auto bg-white rounded-3xl shadow-lg border"
+      style={{ borderColor: accentHex }}
       initial={{ opacity: 0, scale: 0.9 }}
-      animate={{ opacity: 1, scale: 1 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.8 }}
     >
-      {/* Fondo decorativo suave */}
-      <div className="absolute inset-0 opacity-10 bg-[url('/flores-top.png')] bg-no-repeat bg-center bg-contain pointer-events-none"></div>
-
-      {/* Ícono y título */}
-      <div className="flex items-center justify-center gap-3 mb-4">
-        <FaExclamationTriangle className="text-rose-600 text-3xl animate-pulse" />
-        <h3 className="text-3xl font-[Parisienne] text-rose-700 drop-shadow-sm">
+      {/* Ícono + título */}
+      <div className="flex items-center justify-center gap-3 mb-6">
+        <FaExclamationTriangle
+          className="text-3xl animate-pulse drop-shadow-sm"
+          style={{ color: accentHex }}
+        />
+        <h3
+          className="text-4xl font-script drop-shadow-sm"
+          style={{ color: accentHex }}
+        >
           Dress Code
         </h3>
       </div>
 
       {/* Mensaje */}
-      <p className="text-lg md:text-xl font-medium text-gray-800 px-4">
+      <p
+        className="text-lg md:text-xl font-body leading-relaxed"
+        style={{ color: accentHex }}
+      >
         {code}
       </p>
+
+      {/* Íconos de vestimenta */}
+      <div className="mt-8 flex justify-center gap-10 text-rose-600">
+        <motion.div
+          whileHover={{ scale: 1.1, rotate: -5 }}
+          className="flex flex-col items-center gap-2"
+        >
+          <FaUserTie className="text-5xl" />
+          <span className="text-sm font-medium text-rose-700"></span>
+        </motion.div>
+
+        <motion.div
+          whileHover={{ scale: 1.1, rotate: 5 }}
+          className="flex flex-col items-center gap-2"
+        >
+          <FaFemale className="text-5xl" />
+          <span className="text-sm font-medium text-rose-700"></span>
+        </motion.div>
+      </div>
+
+      {/* Estilos tipográficos */}
+      <style>{`
+        .font-script { font-family: 'Parisienne', cursive; }
+        .font-body { font-family: 'Poppins', sans-serif; }
+      `}</style>
     </motion.section>
   );
 };

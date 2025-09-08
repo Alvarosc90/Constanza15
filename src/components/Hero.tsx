@@ -49,8 +49,8 @@ const Hero: React.FC<HeroProps> = ({
 
   const formatFechaBonita = (dt: Date | null) => {
     if (!dt) return { linea1: date, linea2: `${time} hs` };
-    const dias = ["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"];
-    const meses = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+    const dias = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+    const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
     const diaNombre = dias[dt.getDay()];
     const diaNumero = dt.getDate();
     const mesNombre = meses[dt.getMonth()];
@@ -197,14 +197,15 @@ const Hero: React.FC<HeroProps> = ({
       {/* Contenido principal */}
       <div className="relative z-30 w-full max-w-5xl px-6">
         {/* Logo / Sello respirando */}
-        <div className="flex justify-center mb-3 md:mb-5">
+        <div className="flex justify-center mb-4 md:mb-6">
           <img
             src={logoSrc}
             alt={`Mis XV – ${name}`}
-            className="breath w-[260px] sm:w-[360px] md:w-[460px] lg:w-[540px] h-auto"
+            className="breath w-[min(88vw,600px)] sm:w-[420px] md:w-[520px] lg:w-[600px] h-auto"
             style={{ filter: "drop-shadow(0 14px 30px rgba(146,1,18,.18))" }}
           />
         </div>
+
 
         {/* Tarjeta fecha y hora centrada (contenedor grande) */}
         <motion.div

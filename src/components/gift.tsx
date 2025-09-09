@@ -60,20 +60,6 @@ const Gift: React.FC<GiftProps> = ({ alias, accentHex = "#920112" }) => {
         ¡Lo importante es compartir ese momento juntos!
       </p>
 
-      {/* Decoraciones opcionales */}
-      <img
-        src="/decor-left.png"
-        alt=""
-        aria-hidden
-        className="absolute top-8 left-6 w-32 opacity-80 pointer-events-none"
-      />
-      <img
-        src="/decor-right.png"
-        alt=""
-        aria-hidden
-        className="absolute bottom-8 right-6 w-32 opacity-80 pointer-events-none"
-      />
-
       {/* Fuente */}
       <style>{`
         .font-body { font-family: 'Poppins', sans-serif; }

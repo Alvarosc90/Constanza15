@@ -201,10 +201,11 @@ const Hero: React.FC<HeroProps> = ({
           <img
             src={logoSrc}
             alt={`Mis XV – ${name}`}
-            className="breath w-[min(88vw,600px)] sm:w-[420px] md:w-[520px] lg:w-[600px] h-auto"
+            className="breath w-[min(75vw,520px)] sm:w-[360px] md:w-[440px] lg:w-[520px] h-auto"
             style={{ filter: "drop-shadow(0 14px 30px rgba(146,1,18,.18))" }}
           />
         </div>
+
 
 
         {/* Tarjeta fecha y hora centrada (contenedor grande) */}

@@ -10,15 +10,10 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import MusicPlayer from "./components/MusicPlayer";
 
-// 👇 importa el canvas de pétalos
-import RosePetalsCanvas from "./components/RosePetalsCanvas";
-
 function App() {
   return (
     <div className="relative">
       {/* Efecto de pétalos de rosa */}
-      <RosePetalsCanvas count={60} countMobile={28} />
-
       <Header />
       <div className="h-18 md:h-16" />
 

@@ -24,7 +24,7 @@ function App() {
 
         <Location place="Las Marias Multiespacio" />
 
-        <DressCode code="Formal - No usar blanco ni plateado" />
+        <DressCode code="Formal Elegante - No usar blanco ni plateado" />
 
         {/* <Gallery images={["/img1.jpg", "/img2.jpg", "/img3.jpg"]} /> */}
 

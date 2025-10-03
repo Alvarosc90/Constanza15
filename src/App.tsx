@@ -14,10 +14,7 @@ import MusicPlayer from "./components/MusicPlayer";
 function App() {
   return (
     <div className="relative">
-<<<<<<< HEAD
-=======
       {/* Efecto de pétalos de rosa */}
->>>>>>> ef04d9a3a76b5c8e9904b214e08009b8a0cfbb93
       <Header />
       <div className="h-14 md:h-16" />
 
@@ -25,15 +22,11 @@ function App() {
         <Hero name="Constanza" date="01/11/2025" time="21:30" />
         <Countdown targetDate="2025-11-01T22:30:00" />
         <Location place="Las Marias Multiespacio" />
-<<<<<<< HEAD
-        <DressCode code="Formal - No usar blanco ni plateado" />
-=======
 
         <DressCode code="Formal Elegante - No usar blanco ni plateado" />
 
         {/* <Gallery images={["/img1.jpg", "/img2.jpg", "/img3.jpg"]} /> */}
 
->>>>>>> ef04d9a3a76b5c8e9904b214e08009b8a0cfbb93
         <RSVP />
         <Gift alias="Constanza.rc.mp" />
         <FinalMessage />

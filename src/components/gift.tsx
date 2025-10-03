@@ -118,12 +118,7 @@ const Gift: React.FC<GiftProps> = ({ alias, accentHex = "#920112" }) => {
         ¡Lo importante es compartir ese momento juntos!
       </p>
 
-<<<<<<< HEAD
-
-      {/* Fuente */}
-=======
       {/* Fuentes y utilidades */}
->>>>>>> ef04d9a3a76b5c8e9904b214e08009b8a0cfbb93
       <style>{`
         .font-body { font-family: 'Poppins', sans-serif; }
 

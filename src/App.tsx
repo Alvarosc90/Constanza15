@@ -10,6 +10,7 @@ import FinalMessage from "./components/FinalMessage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import MusicPlayer from "./components/MusicPlayer";
+import Gallery from "./components/Gallery";
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
         <DressCode code="Formal Elegante - No usar blanco ni plateado" />
 
         {/* <Gallery images={["/img1.jpg", "/img2.jpg", "/img3.jpg"]} /> */}
-
+        <Gallery />
         <RSVP />
         <Gift alias="Constanza.rc.mp" />
         <FinalMessage />

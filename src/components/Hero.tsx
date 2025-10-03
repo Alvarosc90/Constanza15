@@ -185,6 +185,9 @@ const Hero: React.FC<HeroProps> = ({
         className="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none z-0"
       />
 
+      {/* Pétalos SOLO en el Hero */}
+      
+
       {/* Canvas burbujas */}
       <canvas ref={canvasRef} className="absolute inset-0 pointer-events-none z-10" />
 

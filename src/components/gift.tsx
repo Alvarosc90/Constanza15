@@ -60,6 +60,7 @@ const Gift: React.FC<GiftProps> = ({ alias, accentHex = "#920112" }) => {
         ¡Lo importante es compartir ese momento juntos!
       </p>
 
+
       {/* Fuente */}
       <style>{`
         .font-body { font-family: 'Poppins', sans-serif; }

@@ -1,47 +1,34 @@
+
+
 import Hero from "./components/Hero";
 import Countdown from "./components/Countdown";
 import Location from "./components/Location";
 import DressCode from "./components/DressCode";
-// import Gallery from "./components/Gallery";
-import Gift from "./components/gift";   // <-- mayúscula correcta
+import Gift from "./components/gift";
 import RSVP from "./components/RSVP";
 import FinalMessage from "./components/FinalMessage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import MusicPlayer from "./components/MusicPlayer";
 
-// 👇 importa el canvas de pétalos
-import RosePetalsCanvas from "./components/RosePetalsCanvas";
-
 function App() {
   return (
     <div className="relative">
-      {/* Efecto de pétalos de rosa */}
-      <RosePetalsCanvas count={60} countMobile={28} />
-
       <Header />
-      <div className="h-18 md:h-16" />
+      <div className="h-14 md:h-16" />
 
       <main className="space-y-5 relative z-10">
         <Hero name="Constanza" date="01/11/2025" time="21:30" />
-
         <Countdown targetDate="2025-11-01T22:30:00" />
-
         <Location place="Las Marias Multiespacio" />
-
         <DressCode code="Formal - No usar blanco ni plateado" />
-
-        {/* <Gallery images={["/img1.jpg", "/img2.jpg", "/img3.jpg"]} /> */}
-
         <RSVP />
-
         <Gift alias="Constanza.rc.mp" />
         <FinalMessage />
       </main>
 
       <Footer />
       <MusicPlayer />
-
     </div>
   );
 }
